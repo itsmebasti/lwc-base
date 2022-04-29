@@ -1,11 +1,10 @@
 {
-    "name": "lwc-arcade-beta",
+    "name": "lwc-arcade",
     "version": "1.0.0-beta",
     "license": "MIT",
     "files": [
         "src/modules/",
-        "src/libs/",
-        "src/assets/"
+        "src/libs/"
     ],
     "main": "src/libs/index.js",
     "lwc": {
