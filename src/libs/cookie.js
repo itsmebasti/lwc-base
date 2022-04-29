@@ -1,4 +1,4 @@
-export default function(namespace = 'custom') {
+export default function(namespace = 'arcade') {
     namespace += '__';
     
     return new Proxy({}, {
@@ -12,7 +12,7 @@ export default function(namespace = 'custom') {
         
         set({}, name, value) {
             const json = JSON.stringify(value, (key, value) => (value instanceof Set) ? [...value] : value);
-            const days = (typeof value === 'undefined') ? -1 : 365;
+            const days = (value === undefined) ? -1 : 365;
             document.cookie = namespace + name + '=' + json + '; SameSite=Strict; path=/; secure; Max-Age=' + (days * 24 * 60 * 60);
             
             return true;

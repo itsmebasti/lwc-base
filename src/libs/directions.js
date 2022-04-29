@@ -1,14 +1,16 @@
-const DOWN = {axis: 'y', value: 1};
-const UP = {axis: 'y', value: -1};
-const RIGHT = {axis: 'x', value: 1};
-const LEFT = {axis: 'x', value: -1};
+export const DOWN = {axis: 'y', value: 1};
+export const UP = {axis: 'y', value: -1};
+export const RIGHT = {axis: 'x', value: 1};
+export const LEFT = {axis: 'x', value: -1};
 
 DOWN.opposite = UP;
 UP.opposite = DOWN;
 RIGHT.opposite = LEFT;
 LEFT.opposite = RIGHT;
 
-class DirectionQueue {
+// Note: this queue is holding the two latest directions.
+//       It was needed to fix issues where snake was too slow to handle fast direction changes
+export class DirectionQueue {
     last;
     queue = [];
     
@@ -39,5 +41,3 @@ class DirectionQueue {
         return next;
     }
 }
-
-export { UP, DOWN, RIGHT, LEFT, DirectionQueue }

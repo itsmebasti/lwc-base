@@ -2,11 +2,15 @@
     "name": "lwc-arcade",
     "version": "1.0.0-beta",
     "license": "MIT",
+    "exports": {
+        ".": "./libs/classes.js",
+        "./view": "./moules/arcade/view/model/index.js",
+        "./directions": "./libs/directions.js"
+    },
     "files": [
         "src/modules/",
         "src/libs/"
     ],
-    "main": "src/libs/index.js",
     "lwc": {
         "modules": [
             {
