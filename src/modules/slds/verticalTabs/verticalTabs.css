@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+  .slds-vertical-tabs__nav {
+    display: none;
+  }
+}
+
+slot.content > slds-tab > .slds-vertical-tabs__nav-item {
+  display: none;
+}
+
+slot.items > slds-tab > .slds-vertical-tabs__content {
+  display: none;
+}

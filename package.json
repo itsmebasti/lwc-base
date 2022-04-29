@@ -1,0 +1,51 @@
+{
+    "name": "lwc-arcade-beta",
+    "version": "1.0.0-beta",
+    "license": "MIT",
+    "files": [
+        "src/modules/",
+        "src/libs/",
+        "src/assets/"
+    ],
+    "main": "src/libs/index.js",
+    "lwc": {
+        "modules": [
+            {
+                "dir": "src/modules"
+            },
+            {
+                "npm": "lightning-base-components"
+            }
+        ],
+        "expose": [
+            "arcade/view",
+            "arcade/score",
+            "arcade/painter",
+            "github/corner"
+        ]
+    },
+    "dependencies": {
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0"
+    },
+    "devDependencies": {
+        "@lwc/rollup-plugin": "^2.10.0",
+        "@lwc/synthetic-shadow": "^2.11.0",
+        "@rollup/plugin-replace": "^4.0.0",
+        "lightning-base-components": "^1.14.6-alpha",
+        "lwc": "^2.10.0",
+        "rollup": "^2.70.0",
+        "rollup-plugin-copy": "^3.4.0",
+        "rollup-plugin-livereload": "^2.0.5",
+        "rollup-plugin-serve": "^1.1.0",
+        "rollup-plugin-terser": "^7.0.2"
+    },
+    "scripts": {
+        "clear": "rm -rf dist",
+        "build": "yarn clear && rollup -c",
+        "watch": "yarn clear && rollup -c -w",
+        "serve": "node scripts/server.js",
+        "local": "yarn build && yarn serve"
+    }
+}

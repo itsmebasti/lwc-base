@@ -1,0 +1,5 @@
+<template>
+    <view-canvas if:true={digits} grid={board} scale={scale} background={background} border={border}></view-canvas>
+    
+    <template if:false={digits}>The number of digits is required!</template>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <li if:true={isItem} class={itemClasses}>
+        <a class="slds-vertical-tabs__link">
+            <span class={iconClasses}>
+                <svg aria-hidden="true" class="slds-icon slds-icon_small">
+                    <use xlink:href={icon}></use>
+                </svg>
+            </span>
+            
+            <span class="slds-line-clamp_x-small">{title}</span>
+            
+            <span if:true={badge} class="slds-vertical-tabs__right-icon slds-badge slds-badge_inverse">{badge}</span>
+        </a>
+    </li>
+    <div if:true={isContent} class={contentClasses}>
+        <slot></slot>
+    </div>
+</template>

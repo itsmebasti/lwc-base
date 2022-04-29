@@ -1,0 +1,26 @@
+<template>
+    <github-corner repo="https://github.com/itsmebasti/lwc-arcade" corner-color="#70B7FD"></github-corner>
+    
+    <slds-vertical-tabs>
+        <slds-tab icon-name="standard:decision" icon-color="custom:custom93" title="<arcade-view>">
+            <view-div grid={grid} background="grey" scale="10"></view-div>
+            <view-div grid={grid} background="grey" scale="20"></view-div>
+            <view-div grid={grid} background="grey" border="blue" scale="10"></view-div>
+        </slds-tab>
+        
+        <slds-tab icon-name="standard:decision" icon-color="custom:custom93" title="onclick">
+            <view-pixel-canvas grid={interactive} onclick={paint} background="grey" scale="10"></view-pixel-canvas>
+            <pre>click me</pre>
+        </slds-tab>
+        
+        <slds-tab icon-name="standard:case_change_status" icon-color="standard:call_coaching" title="<arcade-score>">
+            <arcade-score score="1337"></arcade-score>
+            <arcade-score scale="5" digits="4" score="1337"></arcade-score>
+            <arcade-score digits="6" score="1337"></arcade-score>
+            <arcade-score digits="6" score="1337" border="LightBlue" background="grey" color="LightGreen"></arcade-score>
+        </slds-tab>
+        <slds-tab icon-name="standard:case_change_status" icon-color="standard:call_coaching" title="<arcade-painter>">
+            <arcade-painter></arcade-painter>
+        </slds-tab>
+    </slds-vertical-tabs>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-vertical-tabs slds-template__container">
+        <ul class="slds-vertical-tabs__nav">
+            <slot class="items" onslotchange={initItems} onclick={select}></slot>
+        </ul>
+        <div class="slds-vertical-tabs__content slds-scrollable">
+            <slot class="content" onslotchange={initContent}></slot>
+        </div>
+    </div>
+</template>

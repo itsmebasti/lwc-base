@@ -1,0 +1,14 @@
+{
+    "name": "lwc-arcade",
+    "formation": {
+        "web": {
+            "quantity": 1
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "stack": "heroku-18"
+}
