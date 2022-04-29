@@ -1,6 +1,6 @@
 import AudioPlayer from './audioPlayer';
 import Cookie from './cookie';
-import { UP, DOWN, RIGHT, LEFT, DirectionQueue } from '/.directions';
+import { UP, DOWN, RIGHT, LEFT, DirectionQueue } from './directions';
 import GameClock from './gameClock';
 import KeyListener from './keyListener';
 import Publisher from './publisher';
