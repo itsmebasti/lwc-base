@@ -3,10 +3,10 @@ export default class AudioPlayer {
     clips;
     muted;
     
-    constructor(bin) {
+    constructor(directory) {
         this.clips = {};
         this.muted = true;
-        this.directory = `/resources/audio/${bin}/`;
+        this.directory = directory;
         
         let music = this.clip('main');
         music.volume = 0.1;
