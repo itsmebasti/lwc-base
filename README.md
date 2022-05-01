@@ -1,9 +1,12 @@
-# LWC-TRIS
+# lwc-arcade
 This project will build the base package for any further arcade or pixel grid projects
 it will provide some lwc components through npm 
-and contain some demo pages that will be available through heroku soon.
+and contain some demo pages that are available through heroku at
 
-The origin is lwc-tris, which will soon be based on this project.
+https://lwc-arcade.herokuapp.com/
+
+The origin is lwc-tris, which is now reusing the arcade lwc components
+
 https://lwc-tris.herokuapp.com/
 
 ## Local Development
