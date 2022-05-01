@@ -1,6 +1,6 @@
 import { LightningElement, track } from 'lwc';
-import Grid from '../view/model/grid';
-import Shape from '../view/model/shape';
+import Grid from '../../../lib/viewModel/grid';
+import Shape from '../../../lib/viewModel/shape';
 
 export default class Painter extends LightningElement {
     width = 20;

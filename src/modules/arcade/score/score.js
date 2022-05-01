@@ -1,6 +1,6 @@
 import { LightningElement, track, api } from 'lwc';
-import Grid from '../view/model/grid';
-import numbers from '../view/model/numbers';
+import Grid from '../../../lib/viewModel/grid';
+import numbers from '../../../lib/viewModel/numbers';
 
 export default class Score extends LightningElement {
     @api scale = 10;

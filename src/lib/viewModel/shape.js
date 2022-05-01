@@ -1,7 +1,7 @@
 export default class Shape extends Array {
     static get [Symbol.species]() { return Array; }
     
-    constructor(rows, color = FILLED) {
+    constructor(rows, color = Pixel.FILLED) {
         super(...rows.map((pixels, y) => new Row(y, pixels, color)));
     }
     
@@ -95,6 +95,11 @@ class Row extends Array {
     }
 }
 
-export var FILLED = Symbol();
-export var CLEAR = Symbol();
-export var PIXEL = new Shape([[1]]);
+export class Pixel extends Shape {
+    static CLEAR = Symbol();
+    static FILLED = Symbol();
+    
+    constructor() {
+        super([[1]]);
+    }
+}

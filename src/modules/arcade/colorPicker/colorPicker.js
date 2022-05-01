@@ -1,5 +1,5 @@
 import { LightningElement, api, track } from 'lwc';
-import Grid from '../view/model/grid';
+import Grid from '../../../lib/viewModel/grid';
 
 export default class ColorPicker extends LightningElement {
     @track grid = new Grid(16);

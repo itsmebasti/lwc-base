@@ -1,6 +1,6 @@
 import { LightningElement, track } from 'lwc';
-import Grid from '../view/model/grid';
-import numbers from '../view/model/numbers';
+import Grid from '../../../lib/viewModel/grid';
+import numbers from '../../../lib/viewModel/numbers';
 
 export default class Demo extends LightningElement {
     @track grid = new Grid(10, 7);

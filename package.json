@@ -1,15 +1,11 @@
 {
     "name": "lwc-arcade",
-    "version": "1.0.0-beta",
+    "version": "1.0.0",
     "license": "MIT",
-    "exports": {
-        ".": "./libs/classes.js",
-        "./view": "./moules/arcade/view/model/index.js",
-        "./directions": "./libs/directions.js"
-    },
+    "main": "./src/lib/index.js",
     "files": [
         "src/modules/",
-        "src/libs/"
+        "src/lib/"
     ],
     "lwc": {
         "modules": [
@@ -35,6 +31,7 @@
     "devDependencies": {
         "@lwc/rollup-plugin": "^2.10.0",
         "@lwc/synthetic-shadow": "^2.11.0",
+        "@rollup/plugin-node-resolve": "^13.2.1",
         "@rollup/plugin-replace": "^4.0.0",
         "lightning-base-components": "^1.14.6-alpha",
         "lwc": "^2.10.0",

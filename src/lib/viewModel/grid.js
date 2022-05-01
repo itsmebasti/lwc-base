@@ -1,4 +1,4 @@
-import Shape, { FILLED, CLEAR, PIXEL } from './shape';
+import Shape, { Pixel } from './shape';
 
 export default class Grid extends Shape {
     changeId = 0;
@@ -18,8 +18,8 @@ export default class Grid extends Shape {
         this.paint(x, y, color, shape);
     }
     
-    clear(x = 0, y = 0, shape = (arguments.length) ? PIXEL : this) {
-        this.paint(x, y, CLEAR, shape);
+    clear(x = 0, y = 0, shape = (arguments.length) ? new Pixel() : this) {
+        this.paint(x, y, Pixel.CLEAR, shape);
     }
     
     move(x, y, shape, toX, toY) {
@@ -27,14 +27,14 @@ export default class Grid extends Shape {
         this.draw(toX, toY, shape);
     }
     
-    paint(x, y, override, shape = PIXEL) {
+    paint(x, y, override, shape = new Pixel()) {
         shape.painted.forEach(({x: xOffset, y: yOffset, color}) => {
             const pixel = this.pixel(x+xOffset, y+yOffset);
             
             if(pixel) {
                 switch(color = override ?? color) {
-                    case FILLED: throw 'invalid color';
-                    case CLEAR: color = undefined;
+                    case Pixel.FILLED: throw 'invalid color';
+                    case Pixel.CLEAR: color = undefined;
                 }
                 pixel.color = color;
                 pixel.changeId = ++this.changeId;
@@ -50,11 +50,11 @@ export default class Grid extends Shape {
         return this.free(x, y, shape) && this.inside(x, y, shape);
     }
     
-    free(x, y, shape = PIXEL) {
+    free(x, y, shape = new Pixel()) {
         return shape.painted.every(({x: xOffset, y: yOffset}) => this.emptyAt(x + xOffset, y + yOffset));
     }
     
-    inside(x, y, shape = PIXEL) {
+    inside(x, y, shape = new Pixel()) {
         return shape.painted.every(({x: xOffset, y: yOffset}) => {
             return y + yOffset >= 0 && y + yOffset < this.height
                 && x + xOffset >= 0 && x + xOffset < this.width;
