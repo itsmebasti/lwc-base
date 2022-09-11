@@ -4,10 +4,10 @@
   }
 }
 
-slot.content > slds-tab > .slds-vertical-tabs__nav-item {
+slot.content > base-tab > .slds-vertical-tabs__nav-item {
   display: none;
 }
 
-slot.items > slds-tab > .slds-vertical-tabs__content {
+slot.items > base-tab > .slds-vertical-tabs__content {
   display: none;
 }

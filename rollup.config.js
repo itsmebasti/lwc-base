@@ -4,6 +4,7 @@ import serve from 'rollup-plugin-serve';
 import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
 import livereload from 'rollup-plugin-livereload';
+import del from 'rollup-plugin-delete';
 
 
 const production = (process.env.NODE_ENV === 'production');
@@ -22,6 +23,7 @@ export default [
             include: 'src/**'
         },
         plugins: [
+            del({ targets: 'dist/*', runOnce: true }),
             lwc({sourcemap: watching}),
             copy({
                 targets: [
@@ -29,11 +31,10 @@ export default [
                     { src: 'src/assets', dest: 'dist' },
                 ]
             }),
-            replace({ "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV) }),
+            replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), 'preventAssignment': true }),
             production && terser(),
             watching && serve('dist'),
             watching && livereload({ watch: 'dist', delay: 400 })
         ].filter(Boolean)
     },
 ];
-

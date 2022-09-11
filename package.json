@@ -1,5 +1,5 @@
 {
-    "name": "lwc-arcade",
+    "name": "lwc-base",
     "version": "1.0.0",
     "license": "MIT",
     "main": "./src/lib/index.js",
@@ -17,9 +17,9 @@
             }
         ],
         "expose": [
-            "arcade/view",
-            "arcade/score",
-            "arcade/painter",
+            "base/toast",
+            "base/tab",
+            "base/verticalTabs",
             "github/corner"
         ]
     },
@@ -37,15 +37,14 @@
         "lwc": "^2.10.0",
         "rollup": "^2.70.0",
         "rollup-plugin-copy": "^3.4.0",
+        "rollup-plugin-delete": "^2.0.0",
         "rollup-plugin-livereload": "^2.0.5",
         "rollup-plugin-serve": "^1.1.0",
         "rollup-plugin-terser": "^7.0.2"
     },
     "scripts": {
-        "clear": "rm -rf dist",
-        "build": "yarn clear && rollup -c",
-        "watch": "yarn clear && rollup -c -w",
-        "serve": "node scripts/server.js",
-        "local": "yarn build && yarn serve"
+        "build": "rollup --config",
+        "watch": "rollup --config --watch",
+        "local": "yarn build && yarn start"
     }
 }

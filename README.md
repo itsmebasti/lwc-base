@@ -1,20 +1,15 @@
 # lwc-arcade
-This project will build the base package for any further arcade or pixel grid projects
-it will provide some lwc components through npm 
-and contain some demo pages that are available through heroku at
+This project will build the base package for any further lwc projects.
+It will grow over time and provide some lwc components through npm
+and contain some demo pages that are available through google cloud soon
 
-https://lwc-arcade.herokuapp.com/
-
-The origin is lwc-tris, which is now reusing the arcade lwc components
-
-https://lwc-tris.herokuapp.com/
 
 ## Local Development
 
-1. Clone the `lwc-arcade` repository:
+1. Clone the `lwc-base` repository:
 
 ```
-git clone https://github.com/itsmebasti/lwc-arcade
+git clone https://github.com/itsmebasti/lwc-base
 cd lwc-arcade
 ```
 

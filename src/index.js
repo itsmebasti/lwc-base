@@ -1,6 +1,6 @@
 import '@lwc/synthetic-shadow';
 import { createElement } from 'lwc';
-import Demo from 'arcade/demo';
+import Demo from 'base/demo';
 
 document.querySelector('body')
-        .appendChild(createElement('arcade-demo', { is: Demo }));
+        .appendChild(createElement('base-demo', { is: Demo }));
