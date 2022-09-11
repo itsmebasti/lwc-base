@@ -1,21 +1,20 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 
 export default class Toast extends LightningElement {
-    message;
-    @api background;
-    
-    @api show(value) {
-        this.message = value;
-        
-        const toast = this.template.querySelector('div');
-        if(value && toast.className === '') {
-            toast.className = 'show';
-            
-            setTimeout(() => toast.className = '', 2900);
-        }
-    }
-    
-    get style() {
-        return `background: ${this.background}`;
+    id = 0;
+    @track toasts = [];
+
+    @api display(severity, message, details) {
+        this.toasts.push({
+            id: this.id++,
+            severity,
+            message,
+            details,
+            css: 'slds-notify slds-notify_toast slds-theme_' + severity,
+            iconCss: 'slds-icon_container slds-m-right_small slds-no-flex slds-align-top slds-icon-utility-' + severity,
+            href: '/assets/icons/utility-sprite/svg/symbols.svg#' + severity
+        });
+
+        this.show = setTimeout(() => this.toasts.shift(), 2000);
     }
 }

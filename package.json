@@ -17,8 +17,12 @@
             }
         ],
         "expose": [
-            "base/toast",
+            "base/accordionSection",
+            "base/buttonIcon",
+            "base/select",
             "base/tab",
+            "base/toast",
+            "base/toggle",
             "base/verticalTabs",
             "github/corner"
         ]
@@ -44,7 +48,11 @@
     },
     "scripts": {
         "build": "rollup --config",
+        "start": "node server.js",
+        "gcp-build": "yarn build",
         "watch": "rollup --config --watch",
-        "local": "yarn build && yarn start"
+        "local": "yarn build && yarn start",
+        "deploy": "gcloud app deploy --quiet",
+        "open": "gcloud app browse"
     }
 }
