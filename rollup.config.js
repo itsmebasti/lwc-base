@@ -30,7 +30,6 @@ export default [
                 targets: [
                     { src: 'src/index.html', dest: 'dist' },
                     { src: 'src/favicon.ico', dest: 'dist/assets/icons' },
-                    { src: 'node_modules/@salesforce-ux/design-system/assets/icons/*-sprite', dest: 'dist/assets/icons' },
                     { src: 'node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css', dest: 'dist/assets/styles' },
                 ],
                 copyOnce: true

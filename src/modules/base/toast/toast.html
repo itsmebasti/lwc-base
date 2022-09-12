@@ -1,10 +1,6 @@
 <template>
     <div for:each={toasts} for:item="toast" key={toast.id} class={toast.css}>
-        <span class={toast.iconCss}>
-            <svg class="slds-icon slds-icon_small" aria-hidden="true">
-                <use xlink:href={toast.href}></use>
-            </svg>
-        </span>
+        <lightning-icon icon-name={toast.icon} class="slds-m-right_small slds-align-top slds-current-color"></lightning-icon>
         <div class="slds-notify__content">
             <h2 class="slds-text-heading_small">{toast.message}</h2>
             <p if:true={toast.details}>{toast.details}</p>

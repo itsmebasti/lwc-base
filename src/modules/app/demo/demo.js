@@ -8,7 +8,7 @@ export default class Demo extends CacheMixin(LightningElement) {
 
     toast(evt) {
         const value = evt.target.innerText;
-        this.template.querySelector('base-toast').display(value, value);
+        this.template.querySelector('base-toast').display(value, value, 'some details foo bar');
     }
 
     updateCache(evt) {
