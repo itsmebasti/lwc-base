@@ -17,8 +17,6 @@
             }
         ],
         "expose": [
-            "base/accordionSection",
-            "base/buttonIcon",
             "base/select",
             "base/tab",
             "base/toast",
