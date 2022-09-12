@@ -1,7 +1,7 @@
 # lwc-arcade
-This project will build the base package for any further lwc projects.
-It will grow over time and provide some lwc components through npm
-and contain some demo pages that are available through google cloud soon
+This project will build the base package for any further personal lwc projects.
+It will grow over time and provide some lwc components and classes through npm
+and contain some demo pages that are available through google cloud soon.
 
 
 ## Local Development
@@ -10,7 +10,7 @@ and contain some demo pages that are available through google cloud soon
 
 ```
 git clone https://github.com/itsmebasti/lwc-base
-cd lwc-arcade
+cd lwc-base
 ```
 
 2. Install the project dependencies using `yarn` (or `npm`, if you prefer that alternatively)
