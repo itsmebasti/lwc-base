@@ -1,12 +1,34 @@
 <template>
-    <github-corner repo="https://github.com/itsmebasti/lwc-arcade" corner-color="#70B7FD"></github-corner>
+    <github-corner repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
 
     <base-vertical-tabs>
-        <base-tab icon-name="standard:decision" icon-color="custom:custom93" title="<base-toast>">
-            <base-toast></base-toast>
-            <p onclick={toast}>click me</p>
+        <base-tab icon-name="standard:prompt" icon-color="standard:prompt" title="<base-toast>">
+            <base-toast class="slds-is-absolute slds-m-top_xx-large"></base-toast>
+            <p onclick={toast}>error</p>
+            <p onclick={toast}>warning</p>
+            <p onclick={toast}>success</p>
+            <p onclick={toast}>info</p>
         </base-tab>
-        <base-tab icon-name="standard:case_change_status" icon-color="standard:call_coaching" title="<arcade-score>">
+
+        <base-tab icon-name="standard:toggle" icon-color="standard:toggle" title="<base-toggle>">
+            <base-toggle label="demo" when-on="on state selected" when-off="off state selected"></base-toggle>
+        </base-tab>
+
+        <base-tab icon-name="standard:survey" icon-color="standard:survey" title="<base-select>">
+            <base-select label="Select" options={options} value="bar" class="slds-size_small"></base-select>
+        </base-tab>
+
+        <base-tab icon-name="standard:case_change_status" icon-color="standard:call_coaching" title="cache">
+            <div class="slds-show_inline-block">
+                <lightning-input type="text" value={cache.demo} label="Cache input" class="cache slds-size_small">
+                </lightning-input>
+            </div>
+            <lightning-button-icon icon-name="utility:save" onclick={updateCache} class="slds-m-left_xx-small">
+            </lightning-button-icon>
+            <lightning-button-icon icon-name="utility:undo" onclick={resetCache} class="slds-m-left_xx-small">
+            </lightning-button-icon>
+            <p>Cache output:</p>
+            <p>{cache.demo}</p>
         </base-tab>
     </base-vertical-tabs>
 </template>

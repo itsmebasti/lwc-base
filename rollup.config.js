@@ -18,6 +18,7 @@ export default [
             dir: 'dist',
             format: 'esm',
         },
+        preserveEntrySignatures: false,
         watch: {
             clearScreen: false,
             include: 'src/**'
@@ -28,13 +29,16 @@ export default [
             copy({
                 targets: [
                     { src: 'src/index.html', dest: 'dist' },
-                    { src: 'src/assets', dest: 'dist' },
-                ]
+                    { src: 'src/favicon.ico', dest: 'dist/assets/icons' },
+                    { src: 'node_modules/@salesforce-ux/design-system/assets/icons/*-sprite', dest: 'dist/assets/icons' },
+                    { src: 'node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css', dest: 'dist/assets/styles' },
+                ],
+                copyOnce: true
             }),
             replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), 'preventAssignment': true }),
             production && terser(),
             watching && serve('dist'),
-            watching && livereload({ watch: 'dist', delay: 400 })
+            watching && livereload({ watch: 'dist' })
         ].filter(Boolean)
     },
 ];
