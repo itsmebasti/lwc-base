@@ -11,3 +11,15 @@ slot.content > base-tab > .slds-vertical-tabs__nav-item {
 slot.items > base-tab > .slds-vertical-tabs__content {
   display: none;
 }
+
+.slds-vertical-tabs__content {
+  background-color: var(--slds-c-vertical-tabs-color-background, #fff);
+}
+
+.slds-vertical-tabs__nav {
+  background-color: var(--slds-c-vertical-tabs-color-background, #f3f3f3);
+}
+
+.slds-vertical-tabs__link {
+  color: var(--slds-c-vertical-tabs-color-text, currentColor);
+}

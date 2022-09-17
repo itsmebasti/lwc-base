@@ -1,0 +1,11 @@
+.slds-vertical-tabs__nav-item {
+    background-color: var(--slds-c-vertical-tabs-nav-item-color-background, transparent);
+}
+
+.slds-vertical-tabs__nav-item:hover {
+    background-color: var(--slds-c-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
+}
+
+.slds-vertical-tabs__nav-item.slds-is-active {
+    background-color: var(--slds-c-vertical-tabs-nav-item-color-background-active, #fff);
+}

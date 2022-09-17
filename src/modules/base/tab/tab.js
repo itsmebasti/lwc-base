@@ -21,7 +21,7 @@ export default class Tab extends LightningElement {
     }
 
     get contentClasses() {
-        return 'slds-vertical-tabs__content ' + ((this.displayed) ? 'slds-show' : 'slds-hide')
+        return ((this.displayed) ? 'slds-show' : 'slds-hide')
     }
 
     get itemClasses() {
