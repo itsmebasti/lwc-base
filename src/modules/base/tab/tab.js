@@ -20,11 +20,11 @@ export default class Tab extends LightningElement {
         this.displayed = (id === this.id);
     }
 
-    get contentClasses() {
-        return ((this.displayed) ? 'slds-show' : 'slds-hide')
+    get itemClasses() {
+        return 'nav-item slds-vertical-tabs__nav-item ' + ((this.displayed) ? 'slds-is-active' : '')
     }
 
-    get itemClasses() {
-        return 'slds-vertical-tabs__nav-item ' + ((this.displayed) ? 'slds-is-active' : '')
+    get contentClasses() {
+        return 'content ' + ((this.displayed) ? 'slds-show' : 'slds-hide')
     }
 }

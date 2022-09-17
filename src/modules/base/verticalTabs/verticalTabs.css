@@ -4,11 +4,8 @@
   }
 }
 
-slot.content > base-tab > .slds-vertical-tabs__nav-item {
-  display: none;
-}
-
-slot.items > base-tab > .slds-vertical-tabs__content {
+slot.content > base-tab > .nav-item,
+slot.items > base-tab > .content {
   display: none;
 }
 
