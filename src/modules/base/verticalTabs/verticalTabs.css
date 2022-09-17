@@ -16,3 +16,7 @@ slot.items > base-tab > .content {
 .slds-vertical-tabs__nav {
   background-color: var(--slds-c-vertical-tabs-nav-color-background, #f3f3f3);
 }
+
+.slds-vertical-tabs, .slds-vertical-tabs__nav, .slds-vertical-tabs__nav-item {
+  border-color: var(--slds-c-vertical-tabs-nav-color-border, #e5e5e5);
+}
