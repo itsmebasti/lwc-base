@@ -1,15 +1,19 @@
 .slds-vertical-tabs__nav-item {
-    background-color: var(--slds-c-vertical-tabs-nav-item-color-background, transparent);
+  background-color: var(--slds-c-vertical-tabs-nav-item-color-background, transparent);
 }
 
 .slds-vertical-tabs__nav-item:hover {
-    background-color: var(--slds-c-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
+  background-color: var(--slds-c-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
 }
 
 .slds-vertical-tabs__nav-item.slds-is-active {
-    background-color: var(--slds-c-vertical-tabs-nav-item-color-background-active, #fff);
+  background-color: var(--slds-c-vertical-tabs-nav-item-color-background-active, #fff);
 }
 
 .slds-vertical-tabs__link {
   color: var(--slds-c-vertical-tabs-color-text, currentColor);
+}
+
+.slds-vertical-tabs__nav-item {
+  border-color: var(--slds-c-vertical-tabs-nav-color-border, #e5e5e5);
 }
