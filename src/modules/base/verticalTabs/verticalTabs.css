@@ -13,13 +13,9 @@ slot.items > base-tab > .slds-vertical-tabs__content {
 }
 
 .slds-vertical-tabs__content {
-  background-color: var(--slds-c-vertical-tabs-color-background, #fff);
+  background-color: var(--slds-c-vertical-tabs-content-color-background, #fff);
 }
 
 .slds-vertical-tabs__nav {
-  background-color: var(--slds-c-vertical-tabs-color-background, #f3f3f3);
-}
-
-.slds-vertical-tabs__link {
-  color: var(--slds-c-vertical-tabs-color-text, currentColor);
+  background-color: var(--slds-c-vertical-tabs-nav-color-background, #f3f3f3);
 }
