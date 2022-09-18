@@ -9,6 +9,10 @@ slot.items > base-tab > .content {
   display: none;
 }
 
+.slds-vertical-tabs {
+  border-radius: initial;
+}
+
 .slds-vertical-tabs__content {
   background-color: var(--slds-c-vertical-tabs-content-color-background, #fff);
 }
