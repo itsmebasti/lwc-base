@@ -1,5 +1,6 @@
 .slds-vertical-tabs__nav-item {
   background-color: var(--slds-c-vertical-tabs-nav-item-color-background, transparent);
+  border-color: var(--slds-c-vertical-tabs-nav-item-color-border, #e5e5e5);
 }
 
 .slds-vertical-tabs__nav-item:hover {
@@ -12,9 +13,9 @@
 }
 
 .slds-vertical-tabs__link {
-  color: var(--slds-c-vertical-tabs-color-text, currentColor);
+  color: var(--slds-c-vertical-tabs-link-color-text, currentColor);
 }
 
-.slds-vertical-tabs__nav-item {
-  border-color: var(--slds-c-vertical-tabs-nav-color-border, #e5e5e5);
+.slds-vertical-tabs__link:hover {
+  background-color: var(--slds-c-vertical-link-color-background-hover);
 }
