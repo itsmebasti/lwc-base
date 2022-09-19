@@ -20,7 +20,7 @@ export default [
         },
         preserveEntrySignatures: false,
         watch: {
-            clearScreen: false,
+            buildDelay: 1000,
             include: 'src/**'
         },
         plugins: [
@@ -37,7 +37,7 @@ export default [
             replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), 'preventAssignment': true }),
             production && terser(),
             watching && serve('dist'),
-            watching && livereload({ watch: 'dist' })
+            watching && livereload({ watch: 'dist', delay: 400 })
         ].filter(Boolean)
     },
 ];

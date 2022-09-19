@@ -2,7 +2,7 @@
     <github-corner repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
 
     <base-vertical-tabs>
-        <base-tab icon-name="standard:quick_text" title="<base-toast>">
+        <base-tab icon="standard:quick_text" label="<base-toast>">
             <base-toast class="slds-is-absolute slds-m-top_xx-large"></base-toast>
             <p onclick={toast}>error</p>
             <p onclick={toast}>warning</p>
@@ -10,15 +10,15 @@
             <p onclick={toast}>info</p>
         </base-tab>
 
-        <base-tab icon-name="standard:toggle" title="<base-toggle>">
+        <base-tab icon="standard:toggle" label="<base-toggle>">
             <base-toggle label="demo" when-on="on state selected" when-off="off state selected"></base-toggle>
         </base-tab>
 
-        <base-tab icon-name="standard:form" title="<base-select>">
+        <base-tab icon="standard:form" label="<base-select>">
             <base-select label="Select" options={options} value="bar" class="slds-size_small"></base-select>
         </base-tab>
 
-        <base-tab icon-name="standard:product_consumed" title="cache">
+        <base-tab icon="standard:product_consumed" label="cache class">
             <div class="slds-show_inline-block">
                 <lightning-input type="text" value={cache.demo} label="Cache input" class="cache slds-size_small">
                 </lightning-input>

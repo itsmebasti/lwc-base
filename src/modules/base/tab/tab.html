@@ -1,12 +1,3 @@
 <template>
-    <li if:true={isItem} class={itemClasses}>
-        <a class="slds-vertical-tabs__link">
-            <lightning-icon icon-name={iconName} size="small" class="slds-vertical-tabs__left-icon"></lightning-icon>
-            <span class="slds-line-clamp_x-small">{title}</span>
-            <span if:true={badge} class="slds-vertical-tabs__right-icon slds-badge slds-badge_inverse">{badge}</span>
-        </a>
-    </li>
-    <div if:true={isContent} class={contentClasses}>
-        <slot></slot>
-    </div>
+    <slot></slot>
 </template>
