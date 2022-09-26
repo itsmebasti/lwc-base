@@ -1,11 +1,11 @@
 import cookie from "./cookie";
 import ChangeHandlerProxy from "./changeHandlerProxy";
-import { trueTypeOf } from "./trueTypeOf";
+import trueTypeOf from "./trueTypeOf";
 import TrackedSet from "./trackedSet";
 
 const COOKIE = cookie('cache');
 
-export function CacheMixin(Base) {
+export default function CacheMixin(Base) {
     return class extends Base {
         cached(defaults) {
             const result = {};

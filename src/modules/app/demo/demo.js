@@ -1,5 +1,5 @@
 import { LightningElement, track } from 'lwc';
-import { CacheMixin } from '../../../lib/cache';
+import CacheMixin from '../../../lib/cache';
 
 export default class Demo extends CacheMixin(LightningElement) {
     @track cache = this.cached({ demo: 'change me' });

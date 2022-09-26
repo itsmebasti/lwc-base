@@ -1,4 +1,4 @@
-import {trueTypeOf} from "./trueTypeOf";
+import trueTypeOf from "./trueTypeOf";
 
 export default class ChangeHandlerProxy {
 	onChangeCallback;
