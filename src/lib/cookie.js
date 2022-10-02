@@ -5,7 +5,7 @@ export default function(namespace = 'base') {
         get({}, name) {
             return document.cookie
                     .split(/ *; */)
-                    .filter((cookie) => cookie.startsWith(namespace + name))
+                    .filter((cookie) => cookie.startsWith(namespace + name + '='))
                     .map((cookie) => cookie.match(namespace + name + '=(.+)')[1])
                     .map((value) => JSON.parse(value))[0];
         },
