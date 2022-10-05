@@ -2,3 +2,7 @@ base-toast {
     left: 50%;
     transform: translateX(-50%);
 }
+
+base-timeline-item:first-of-type {
+    --slds-lwc-base-timeline-item-vertical-line-color: lightgreen;
+}

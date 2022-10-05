@@ -1,0 +1,23 @@
+.slds-timeline__trigger, .slds-timeline__date {
+    font-weight: bold;
+    color: var(--slds-lwc-base-timeline-item-trigger-color, black);
+    background-color: var(--slds-lwc-base-timeline-item-trigger-color-background, white);
+    cursor: pointer;
+}
+
+.slds-timeline__trigger:hover, .slds-timeline__trigger:hover .slds-timeline__date {
+    color: var(--slds-lwc-base-timeline-item-trigger-color-hover, darkgreen);
+    background-color: var(--slds-lwc-base-timeline-item-trigger-color-background-hover, lightgrey);
+}
+
+.slds-timeline__icon {
+    border-color: var(--slds-lwc-base-timeline-item-icon-color-border, white);
+}
+
+.slds-timeline__item_expandable::before {
+    background-color: var(--slds-lwc-base-timeline-item-vertical-line-color, lightblue);
+}
+
+.slds-timeline__item_details {
+    background-color: var(--slds-lwc-base-timeline-item-details-color-background, lightgray);
+}

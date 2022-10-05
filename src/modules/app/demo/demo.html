@@ -2,6 +2,24 @@
     <github-corner repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
 
     <base-vertical-tabs>
+        <base-tab icon="standard:product_item_transaction" label="<base-vertical-tabs>">
+            These are the css hooks to style the vertical tabs that are also use for this application.
+            <br>
+            <br>
+            <table class="slds-table slds-table_cell-buffer slds-tabl_bordered slds-size_x-large">
+                <thead><tr><th>Hook</th><th>default</th></tr></thead>
+                    <tbody>
+                    <tr><td>--slds-lwc-base-vertical-tabs-content-color-background</td><td>#fff</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-color-background</td><td>#f3f3f3</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-color-border</td><td>#e5e5e5</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background</td><td>transparent</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-border</td><td>#e5e5e5</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background-hover</td><td>#c9c9c9</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background-active</td><td>#fff</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-text-color</td><td>currentColor</td></tr>
+                </tbody>
+            </table>
+        </base-tab>
         <base-tab icon="standard:quick_text" label="<base-toast>">
             <base-toast class="slds-is-absolute slds-m-top_xx-large"></base-toast>
             <p onclick={toast}>error</p>
@@ -15,18 +33,43 @@
         </base-tab>
 
         <base-tab icon="standard:form" label="<base-select>">
-            <base-select label="Select" options={options} value="bar" class="slds-size_small"></base-select>
+            <base-select label="Select" options={options} value="bar" class="slds-show_inline-block slds-size_x-small"></base-select>
+        </base-tab>
+        
+        <base-tab icon="standard:date_time" label="<base-timeline>">
+            <base-timeline class="slds-size_x-large slds-show">
+                <base-timeline-item label="Added Timeline" date="05.10.2022" icon="standard:task" open>
+                    Today I added a slds similar timeline and introduced these css hooks:
+                    <br>
+                    <br>
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                        <thead><tr><th>Hook</th><th>default</th></tr></thead>
+                            <tbody>
+                            <tr><td>--slds-lwc-base-timeline-item-trigger-color</td><td>black</td></tr>
+                            <tr><td>--slds-lwc-base-timeline-item-trigger-color-hover</td><td>darkblue</td></tr>
+                            <tr><td>--slds-lwc-base-timeline-item-trigger-color-background-hover</td><td>black</td></tr>
+                            <tr><td>--slds-lwc-base-timeline-item-icon-color-border</td><td>white</td></tr>
+                            <tr><td>--slds-lwc-base-timeline-item-vertical-line-color</td><td>lightblue</td></tr>
+                            <tr><td>--slds-lwc-base-timeline-item-details-color-background</td><td>lightgrey</td></tr>
+                        </tbody>
+                    </table>
+                </base-timeline-item>
+                <base-timeline-item label="Demo Change Log" date="05.10.2022" icon="standard:task2" open>
+                    This is a simple timeline demo with some logs introducing new features of this library
+                </base-timeline-item>
+                <base-timeline-item label="Klick to open details" date="05.10.2022" icon="standard:case">
+                    This Content will be visible when the header or button is klicked.
+                    <br>Foo Bar
+                </base-timeline-item>
+            </base-timeline>
         </base-tab>
 
         <base-tab icon="standard:product_consumed" label="cache class">
             <div class="slds-show_inline-block">
-                <lightning-input type="text" value={cache.demo} label="Cache input" class="cache slds-size_small">
-                </lightning-input>
+                <lightning-input type="text" value={cache.demo} label="Cache input" class="cache slds-size--small"></lightning-input>
             </div>
-            <lightning-button-icon icon-name="utility:save" onclick={updateCache} class="slds-m-left_xx-small">
-            </lightning-button-icon>
-            <lightning-button-icon icon-name="utility:undo" onclick={resetCache} class="slds-m-left_xx-small">
-            </lightning-button-icon>
+            <lightning-button-icon icon-name="utility:save" onclick={updateCache} class="slds-m-left_xx-small"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:undo" onclick={resetCache} class="slds-m-left_xx-small"></lightning-button-icon>
             <p>Cache output:</p>
             <p>{cache.demo}</p>
         </base-tab>

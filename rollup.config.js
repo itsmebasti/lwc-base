@@ -20,7 +20,8 @@ export default [
         },
         preserveEntrySignatures: false,
         watch: {
-            buildDelay: 1000,
+            clearScreen: false,
+            buildDelay: 2000,
             include: 'src/**'
         },
         plugins: [
