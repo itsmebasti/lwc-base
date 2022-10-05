@@ -9,31 +9,31 @@
 }
 
 .slds-vertical-tabs__content {
-  background-color: var(--slds-c-vertical-tabs-content-color-background, #fff);
+  background-color: var(--slds-lwc-base-vertical-tabs-content-color-background, #fff);
 }
 
 .slds-vertical-tabs__nav {
-  background-color: var(--slds-c-vertical-tabs-nav-color-background, #f3f3f3);
+  background-color: var(--slds-lwc-base-vertical-tabs-nav-color-background, #f3f3f3);
 }
 
 .slds-vertical-tabs, .slds-vertical-tabs__nav {
-  border-color: var(--slds-c-vertical-tabs-nav-color-border, #e5e5e5);
+  border-color: var(--slds-lwc-base-vertical-tabs-nav-color-border, #e5e5e5);
 }
 .slds-vertical-tabs__nav-item {
-  background-color: var(--slds-c-vertical-tabs-nav-item-color-background, transparent);
-  border-color: var(--slds-c-vertical-tabs-nav-item-color-border, #e5e5e5);
+  background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background, transparent);
+  border-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-border, #e5e5e5);
 }
 
 .slds-vertical-tabs__nav-item:hover,
 .slds-vertical-tabs__link:hover {
-  background-color: var(--slds-c-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
+  background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
 }
 
 .slds-vertical-tabs__nav-item.slds-is-active,
 .slds-vertical-tabs__nav-item.slds-is-active .slds-vertical-tabs__link:hover {
-  background-color: var(--slds-c-vertical-tabs-nav-item-color-background-active, #fff);
+  background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background-active, #fff);
 }
 
 .slds-vertical-tabs__link {
-  color: var(--slds-c-vertical-tabs-text-color, currentColor);
+  color: var(--slds-lwc-base-vertical-tabs-text-color, currentColor);
 }
