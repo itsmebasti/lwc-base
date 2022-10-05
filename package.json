@@ -22,6 +22,8 @@
             "base/toast",
             "base/toggle",
             "base/verticalTabs",
+            "base/timeline",
+            "base/timelineItem",
             "github/corner"
         ]
     },
