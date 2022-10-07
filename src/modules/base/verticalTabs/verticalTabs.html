@@ -1,15 +1,15 @@
 <template>
-    <div class="slds-vertical-tabs slds-template__container">
-        <ul class="slds-vertical-tabs__nav">
+    <div class={divClass}>
+        <ul class={ulClass}>
             <li for:each={items} for:item="item" key={item.id} data-id={item.id} class={item.classes} onclick={select}>
-                <a class="slds-vertical-tabs__link">
-                    <lightning-icon icon-name={item.icon} size="small" class="slds-vertical-tabs__left-icon"></lightning-icon>
-                    <span class="slds-line-clamp_x-small">{item.label}</span>
-                    <span if:true={item.badge} class="slds-vertical-tabs__right-icon slds-badge slds-badge_inverse">{item.badge}</span>
+                <a class={linkClass}>
+                    <lightning-icon icon-name={item.icon} size="small" class={iconClass}></lightning-icon>
+                    <span>{item.label}</span>
+                    <span if:true={item.badge} class={badgeClass}>{item.badge}</span>
                 </a>
             </li>
         </ul>
-        <div class="slds-vertical-tabs__content slds-scrollable">
+        <div class={contentClass}>
             <slot onslotchange={initialize}></slot>
         </div>
     </div>

@@ -1,9 +1,3 @@
-@media screen and (max-width: 1000px) {
-  .slds-vertical-tabs__nav {
-    display: none;
-  }
-}
-
 .slds-vertical-tabs {
   border-radius: initial;
 }
@@ -12,28 +6,30 @@
   background-color: var(--slds-lwc-base-vertical-tabs-content-color-background, #fff);
 }
 
-.slds-vertical-tabs__nav {
+.slds-vertical-tabs__nav, .slds-tabs_scoped {
   background-color: var(--slds-lwc-base-vertical-tabs-nav-color-background, #f3f3f3);
 }
 
-.slds-vertical-tabs, .slds-vertical-tabs__nav {
+.slds-vertical-tabs, .slds-vertical-tabs__nav, .slds-tabs_scoped, .slds-tabs_scoped__nav {
   border-color: var(--slds-lwc-base-vertical-tabs-nav-color-border, #e5e5e5);
 }
-.slds-vertical-tabs__nav-item {
+.slds-vertical-tabs__nav-item, .slds-tabs_scoped__item {
   background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background, transparent);
   border-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-border, #e5e5e5);
 }
 
-.slds-vertical-tabs__nav-item:hover,
-.slds-vertical-tabs__link:hover {
+.slds-vertical-tabs__nav-item:hover, .slds-tabs_scoped__item:hover,
+.slds-vertical-tabs__link:hover, .slds-tabs_scoped__link:hover {
   background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background-hover, #c9c9c9);
 }
 
-.slds-vertical-tabs__nav-item.slds-is-active,
-.slds-vertical-tabs__nav-item.slds-is-active .slds-vertical-tabs__link:hover {
+.slds-vertical-tabs__nav-item.slds-is-active, 
+.slds-tabs_scoped__item.slds-is-active,
+.slds-vertical-tabs__nav-item.slds-is-active .slds-vertical-tabs__link:hover,
+.slds-tabs_scoped__item.slds-is-active .slds-tabs_scoped__link:hover {
   background-color: var(--slds-lwc-base-vertical-tabs-nav-item-color-background-active, #fff);
 }
 
-.slds-vertical-tabs__link {
+.slds-vertical-tabs__link, .slds-tabs_scoped__link {
   color: var(--slds-lwc-base-vertical-tabs-text-color, currentColor);
 }
