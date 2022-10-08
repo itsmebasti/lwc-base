@@ -1,8 +1,8 @@
 <template>
-    <github-corner repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
+    <github-corner class="slds-show_large" repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
 
-    <base-vertical-tabs>
-        <base-tab icon="standard:product_item_transaction" label="<base-vertical-tabs>">
+    <base-tabs>
+        <base-tab icon="standard:product_item_transaction" label="<base-vertical-tabs>" badge="Badge">
             These are the css hooks to style the vertical tabs that are also use for this application.
             <br>
             <br>
@@ -13,10 +13,9 @@
                     <tr><td>--slds-lwc-base-vertical-tabs-nav-color-background</td><td>#f3f3f3</td></tr>
                     <tr><td>--slds-lwc-base-vertical-tabs-nav-color-border</td><td>#e5e5e5</td></tr>
                     <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background</td><td>transparent</td></tr>
-                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-border</td><td>#e5e5e5</td></tr>
                     <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background-hover</td><td>#c9c9c9</td></tr>
-                    <tr><td>--slds-lwc-base-vertical-tabs-nav-item-color-background-active</td><td>#fff</td></tr>
                     <tr><td>--slds-lwc-base-vertical-tabs-text-color</td><td>currentColor</td></tr>
+                    <tr><td>--slds-lwc-base-vertical-tabs-text-color-hover</td><td>#0176d3</td></tr>
                 </tbody>
             </table>
         </base-tab>
@@ -74,5 +73,5 @@
             <p>Cache output:</p>
             <p>{cache.demo}</p>
         </base-tab>
-    </base-vertical-tabs>
+    </base-tabs>
 </template>

@@ -1,3 +1,14 @@
+:host {
+    --slds-lwc-base-vertical-tabs-content-color-background: lightgrey;
+    
+    --slds-lwc-base-vertical-tabs-nav-color-background: darkgreen;
+    --slds-lwc-base-vertical-tabs-nav-color-border:	green;
+    --slds-lwc-base-vertical-tabs-text-color: white;
+    --slds-lwc-base-vertical-tabs-nav-item-color-background: grey;
+    --slds-lwc-base-vertical-tabs-nav-item-color-background-hover: darkgrey;
+    --slds-lwc-base-vertical-tabs-text-color-hover: grey;
+}
+
 base-toast {
     left: 50%;
     transform: translateX(-50%);

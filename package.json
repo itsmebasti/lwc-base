@@ -17,13 +17,13 @@
             }
         ],
         "expose": [
-            "base/select",
-            "base/tab",
             "base/toast",
-            "base/toggle",
-            "base/verticalTabs",
+            "base/tabs",
+            "base/tab",
             "base/timeline",
             "base/timelineItem",
+            "base/toggle",
+            "base/select",
             "github/corner"
         ]
     },

@@ -4,12 +4,12 @@
             <li for:each={items} for:item="item" key={item.id} data-id={item.id} class={item.classes} onclick={select}>
                 <a class={linkClass}>
                     <lightning-icon icon-name={item.icon} size="small" class={iconClass}></lightning-icon>
-                    <span>{item.label}</span>
-                    <span if:true={item.badge} class={badgeClass}>{item.badge}</span>
+                    <span if:true={renderVertically}>{item.label}</span>
+                    <span if:true={item.badge} class="slds-vertical-tabs__right-icon slds-badge slds-badge_inverse">{item.badge}</span>
                 </a>
             </li>
         </ul>
-        <div class={contentClass}>
+        <div class="content slds-p-around_medium">
             <slot onslotchange={initialize}></slot>
         </div>
     </div>
