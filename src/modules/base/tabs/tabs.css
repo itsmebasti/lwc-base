@@ -2,9 +2,18 @@
     border-radius: initial;
 }
 
+.slds-vertical-tabs, .slds-tabs_scoped {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.slds-tabs_scoped {
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
-    height: 100%;
-    width: 100%;
+    flex: auto;
 }
 
 .content,

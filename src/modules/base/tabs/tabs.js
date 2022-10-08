@@ -61,7 +61,7 @@ export default class VerticalTabs extends LightningElement {
     }
     
     get divClass() {
-        return this.renderVertically ? 'slds-vertical-tabs slds-template__container' : 'slds-tabs_scoped slds-template__container';
+        return this.renderVertically ? 'slds-vertical-tabs' : 'slds-tabs_scoped';
     }
     
     get ulClass() {
