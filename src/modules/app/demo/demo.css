@@ -1,12 +1,12 @@
 :host {
-    --slds-lwc-base-vertical-tabs-content-color-background: lightgrey;
+    --slds-lwc-base-tabs-content-color-background: lightgrey;
     
-    --slds-lwc-base-vertical-tabs-nav-color-background: darkgreen;
-    --slds-lwc-base-vertical-tabs-nav-color-border:	green;
-    --slds-lwc-base-vertical-tabs-text-color: white;
-    --slds-lwc-base-vertical-tabs-nav-item-color-background: grey;
-    --slds-lwc-base-vertical-tabs-nav-item-color-background-hover: darkgrey;
-    --slds-lwc-base-vertical-tabs-text-color-hover: grey;
+    --slds-lwc-base-tabs-nav-color-background: darkgreen;
+    --slds-lwc-base-tabs-nav-color-border:	green;
+    --slds-lwc-base-tabs-text-color: white;
+    --slds-lwc-base-tabs-nav-item-color-background: grey;
+    --slds-lwc-base-tabs-nav-item-color-background-hover: darkgrey;
+    --slds-lwc-base-tabs-text-color-hover: grey;
 }
 
 base-toast {
