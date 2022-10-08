@@ -16,6 +16,12 @@
     flex: auto;
 }
 
+.label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .content,
 .slds-vertical-tabs__nav-item.slds-is-active, 
 .slds-tabs_scoped__item.slds-is-active {

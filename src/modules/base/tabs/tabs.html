@@ -4,7 +4,7 @@
             <li for:each={items} for:item="item" key={item.id} data-id={item.id} class={item.classes} onclick={select}>
                 <a class={linkClass}>
                     <lightning-icon icon-name={item.icon} size="small" class={iconClass}></lightning-icon>
-                    <span if:true={renderVertically}>{item.label}</span>
+                    <span if:true={renderVertically} class="label">{item.label}</span>
                     <span if:true={item.badge} class="slds-vertical-tabs__right-icon slds-badge slds-badge_inverse">{item.badge}</span>
                 </a>
             </li>
