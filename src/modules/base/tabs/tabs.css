@@ -12,6 +12,10 @@
     flex-direction: column;
 }
 
+.slds-vertical-tabs__nav {
+    flex-shrink: 0;
+}
+
 .content {
     flex: auto;
 }
@@ -52,7 +56,6 @@ li.slds-vertical-tabs__nav-item {
 }
 
 .slds-tabs_scoped__nav {
-    flex-shrink: 0;
     align-items: initial;
     margin-bottom: unset;
     border-bottom: 1px solid;
