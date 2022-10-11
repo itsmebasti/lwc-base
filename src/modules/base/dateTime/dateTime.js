@@ -12,15 +12,19 @@ export default class DateTime extends LightningElement {
         const timeControl = this.template.querySelector('input.time');
         const date = new Date(dateControl.valueAsNumber + timeControl.valueAsNumber);
 
-        return parseInt((date.getTime() + (date.getTimezoneOffset() * 60)) / 1000);
+        return parseInt((date.getTime() + this.offsetMillis(date)) / 1000);
     }
 
     get date() {
-        const datetime = new Date(this.milliseconds);
-        return new Date(datetime.getTime() - (datetime.getTimezoneOffset() * 60000)).toISOString().slice(0, 10);
+        const date = new Date(this.milliseconds);
+        return new Date(date.getTime() - this.offsetMillis(date)).toISOString().slice(0, 10);
     }
 
     get time() {
         return new Date(this.milliseconds).toLocaleTimeString('de-DE');
+    }
+    
+    offsetMillis(date) {
+        return date.getTimezoneOffset() * 60 * 1000;
     }
 }
