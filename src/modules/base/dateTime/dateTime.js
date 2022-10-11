@@ -3,7 +3,7 @@ import { LightningElement, api } from 'lwc';
 export default class DateTime extends LightningElement {
     milliseconds;
     
-    @api set value(value) {
+    @api set value(value = 0) {
         this.milliseconds = value * 1000;
     }
     
