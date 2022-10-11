@@ -1,3 +1,11 @@
+div.slds-timeline__item_expandable article.slds-timeline__item_details {
+    display: none; /* Note: I decided to replace visibility with display due to UI issues on mobile */
+}
+
+div.slds-timeline__item_expandable.slds-is-open article.slds-timeline__item_details {
+    display: block;
+}
+
 .slds-timeline__trigger, .slds-timeline__date {
     font-weight: bold;
     color: var(--slds-lwc-base-timeline-item-trigger-color, black);
