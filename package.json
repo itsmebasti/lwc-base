@@ -17,6 +17,7 @@
             }
         ],
         "expose": [
+            "base/dateTime",
             "base/toast",
             "base/tabs",
             "base/tab",
