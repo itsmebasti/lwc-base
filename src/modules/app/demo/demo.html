@@ -35,7 +35,7 @@
             <base-select label="Select" options={options} value="bar" class="slds-show_inline-block slds-size_x-small"></base-select>
         </base-tab>
         
-        <base-tab icon="standard:date_time" label="<base-timeline>">
+        <base-tab icon="standard:carousel" label="<base-timeline>">
             <base-timeline class="slds-size_x-large slds-show">
                 <base-timeline-item label="Added Timeline" date="05.10.2022" icon="standard:task" open>
                     Today I added a slds similar timeline and introduced these css hooks:
@@ -62,6 +62,14 @@
                     <br>Foo Bar
                 </base-timeline-item>
             </base-timeline>
+        </base-tab>
+        
+        <base-tab icon="standard:date_time" label="<base-date-time>">
+            Demo: 
+            <base-date-time label="Demo: " value={dateTime}></base-date-time>
+            <lightning-button label="Update" onclick={updateDateTime} class="slds-m-left_small"></lightning-button>
+            <br>
+            Unix Timestamp in seconds: {dateTime}
         </base-tab>
 
         <base-tab icon="standard:product_consumed" label="cache class">
