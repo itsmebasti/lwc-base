@@ -5,7 +5,7 @@ export default class Demo extends CacheMixin(LightningElement) {
     @track cache = this.cached({ demo: 'change me' });
 
     options = ['foo', 'bar'];
-    dateTime = parseInt(Date.now() / 1000);
+    dateTime = Date.now();
 
     toast(evt) {
         const value = evt.target.innerText;

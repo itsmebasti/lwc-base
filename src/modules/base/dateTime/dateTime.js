@@ -4,7 +4,7 @@ export default class DateTime extends LightningElement {
     milliseconds;
     
     @api set value(value = 0) {
-        this.milliseconds = value * 1000;
+        this.milliseconds = parseInt(value / 1000) * 1000;
     }
     
     get value() {
@@ -12,7 +12,7 @@ export default class DateTime extends LightningElement {
         const timeControl = this.template.querySelector('input.time');
         const date = new Date(dateControl.valueAsNumber + timeControl.valueAsNumber);
 
-        return parseInt((date.getTime() + this.offsetMillis(date)) / 1000);
+        return parseInt(date.getTime() + this.offsetMillis(date));
     }
 
     get date() {

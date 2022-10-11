@@ -1,8 +1,8 @@
 <template>
-    <github-corner class="slds-show_large" repo="https://github.com/itsmebasti/lwc-base" corner-color="#FD6C6C"></github-corner>
+    <github-corner class="slds-show_large" repo="https://github.com/itsmebasti/lwc-base" corner-color="#6ec06e"></github-corner>
 
     <base-tabs>
-        <base-tab icon="standard:product_item_transaction" label="<base-vertical-tabs>" badge="Badge">
+        <base-tab icon="standard:product_item_transaction" label="<base-tabs>">
             These are the css hooks to style the vertical tabs that are also use for this application.
             <br>
             <br>
@@ -69,10 +69,10 @@
             <base-date-time label="Demo: " value={dateTime}></base-date-time>
             <lightning-button label="Update" onclick={updateDateTime} class="slds-m-left_small"></lightning-button>
             <br>
-            Unix Timestamp in seconds: {dateTime}
+            Unix Timestamp: {dateTime}
         </base-tab>
 
-        <base-tab icon="standard:product_consumed" label="cache class">
+        <base-tab icon="standard:product_consumed" label="cache" badge="class">
             <div class="slds-show_inline-block">
                 <lightning-input type="text" value={cache.demo} label="Cache input" class="cache slds-size--small"></lightning-input>
             </div>
